@@ -28,7 +28,7 @@
     </div>
 
     <div th:fragment="search-results">
-        <h3 th:if="${results} and ${results.size()}"><span th:text="${results.size()}"></span> Result(s)</h3>
+        <h3><span th:text="${results.size()}"></span> Result(s)</h3>
 
         <table th:each="result : ${results}" class="job-listing">
             <tr th:each="field : ${result}">
